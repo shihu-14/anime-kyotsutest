@@ -1,0 +1,39 @@
+{
+  "latex-workshop.latex.outDir": "%DIR%/out",
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.fileTypes": [
+    "%DOCFILE%.aux",
+    "%DOCFILE%.log",
+    "%DOCFILE%.out",
+    "%DOCFILE%.fls",
+    "%DOCFILE%.fdb_latexmk",
+    "%DOCFILE%.synctex.gz"
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (lualatex)",
+      "tools": [
+        "latexmk-lualatex"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-lualatex",
+      "command": "latexmk",
+      "args": [
+        "-lualatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {
+        "TEXMFVAR": "%DIR%/out/.texlive-cache",
+        "TEXMFCACHE": "%DIR%/out/.texlive-cache"
+      }
+    }
+  ]
+}

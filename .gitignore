@@ -1,0 +1,13 @@
+.DS_Store
+.texlive-cache/
+
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+out/*
+!out/
+!out/kyotutest_anime.pdf
