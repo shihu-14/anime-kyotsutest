@@ -11,3 +11,4 @@
 out/*
 !out/
 !out/kyotutest_anime.pdf
+!out/kyotutest_anime_onlymark.pdf

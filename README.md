@@ -1,6 +1,13 @@
 # anime-kyotsutest
 
-アニメ・漫画を題材にした共通テスト風の問題冊子です。メインの TeX ソースは `kyotutest_anime.tex` で、生成済み PDF は `out/kyotutest_anime.pdf` に出力します。
+アニメ・漫画を題材にした共通テスト風の問題冊子です。メインの TeX ソースは `kyotutest_anime.tex` で、生成済み PDF は `out/` に出力します。
+
+## PDF
+
+- 問題冊子: [`out/kyotutest_anime.pdf`](out/kyotutest_anime.pdf)
+- マーク付き版: [`out/kyotutest_anime_onlymark.pdf`](out/kyotutest_anime_onlymark.pdf)
+
+GitHub の PDF プレビューで `Unable to render code block` が出る場合は、PDF ファイル画面の **Download raw file** から開いてください。リポジトリ上の PDF は binary として管理しています。
 
 ## コンパイル方法
 
